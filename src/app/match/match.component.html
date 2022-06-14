@@ -1,0 +1,7 @@
+<div *ngFor="let d of this.data; let i = index">
+  <button (click)="fillArray(d)" class="mt">{{d.id}}</button>
+</div>
+<div *ngFor="let d of this.data; let i = index">
+  <button (click)="fillArray(d)" class="mt">{{d.name}}</button>
+</div>
+<div *ngIf="this.data.length ==0" class="text-color">Congratulations!!</div>
